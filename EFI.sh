@@ -1,5 +1,5 @@
 #!/bin/sh
-DESTINATION="/Volumes/Stockage/Sauvegardes/Hackintosh/"
+DESTINATION="/Users/nicolas/Documents/Sauvegardes/Hackintosh/"
 TIME=`date +%Y%m%d-%H%M%S` 
 NAME=EFI-$TIME
 hdiutil create -srcdevice /dev/disk0s1 $DESTINATION$NAME
