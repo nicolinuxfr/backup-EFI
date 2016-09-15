@@ -6,9 +6,16 @@ Le script `EFI.sh` sauvegarde la partition EFI sous la forme d'un DMG stocké da
 
 Pour l'activer automatiquement, le fichier `com.nicolinux.backupEFI.plist` est activé comme un LaunchDaemon qui lance le script tous les jours à minuit.
 
+## Préparation
+
+
+- Modifiez le fichier `EFI.sh` pour changer le chemin de destination pour les sauvegardes ([ligne&nbsp;2](https://github.com/nicolinuxfr/backup-EFI/blob/master/EFI.sh#L2)). Choisissez ce que vous voulez, mais de préférence un dossier sauvegardé régulièrement.
+- Ouvrez le fichier `com.nicolinux.backupEFI.plist` pour modifier le chemin d'accès au script ([ligne&nbsp;12](https://github.com/nicolinuxfr/backup-EFI/blob/master/com.nicolinux.backupEFI.plist#L12)). Vous pouvez placer le fichier `EFI.sh` n'importe où, mais gardez-le à un endroit où il ne sera supprimé par erreur. 
+
+
 ## Installation
 
-⚠️ Ouvrez le fichier `com.nicolinux.backupEFI.plist` pour modifier le chemin d'accès au script ([ligne&nbsp;12](https://github.com/nicolinuxfr/backup-EFI/blob/master/com.nicolinux.backupEFI.plist#L12)). Vous pouvez placer le fichier `EFI.sh` n'importe où, mais gardez-le à un endroit où il ne sera supprimé par erreur. ⚠️ 
+**Note** : le script nécessite un accès root pour fonctionner, c'est pourquoi on le place dans la bibliothèque système.
 
 - Déplacement du plist :
 
