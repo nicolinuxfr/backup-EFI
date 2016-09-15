@@ -11,11 +11,17 @@ Pour l'activer automatiquement, le fichier `com.nicolinux.backupEFI.plist` est a
 ⚠️ Ouvrez le fichier `com.nicolinux.backupEFI.plist` pour modifier le chemin d'accès au script ([ligne&nbsp;12](https://github.com/nicolinuxfr/backup-EFI/blob/master/com.nicolinux.backupEFI.plist#L12)). Vous pouvez placer le fichier `EFI.sh` n'importe où, mais gardez-le à un endroit où il ne sera supprimé par erreur. ⚠️ 
 
 - Déplacez le fichier dans `com.nicolinux.backupEFI.plist` :
+
 	sudo mv com.nicolinux.backupEFI.plist /System/Library/LaunchDaemons/
+
 - Correction des autorisations : 
+
+
 	sudo chown root /System/Library/LaunchDaemons/com.nicolinux.backupEFI.plist
 	sudo chgrp wheel /System/Library/LaunchDaemons/com.nicolinux.backupEFI.plist
+
 - Activation ;
+	
 	sudo launchctl load -w /System/Library/LaunchDaemons/com.nicolinux.backupEFI.plist
 
 
