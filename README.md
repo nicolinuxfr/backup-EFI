@@ -20,20 +20,20 @@ Pour l'activer automatiquement, le fichier `com.nicolinux.backupEFI.plist` est a
 - Déplacement du plist :
 
 ```	
-	sudo mv com.nicolinux.backupEFI.plist /System/Library/LaunchDaemons/
+	sudo mv com.nicolinux.backupEFI.plist /Library/LaunchDaemons/
 ```	
 
 - Correction des autorisations : 
 
 ```	
-	sudo chown root /System/Library/LaunchDaemons/com.nicolinux.backupEFI.plist
-	sudo chgrp wheel /System/Library/LaunchDaemons/com.nicolinux.backupEFI.plist
+	sudo chown root /Library/LaunchDaemons/com.nicolinux.backupEFI.plist
+	sudo chgrp wheel /Library/LaunchDaemons/com.nicolinux.backupEFI.plist
 ```	
 
 - Activation : 
 	
 ```	
-	sudo launchctl load -w /System/Library/LaunchDaemons/com.nicolinux.backupEFI.plist
+	sudo launchctl load -w /Library/LaunchDaemons/com.nicolinux.backupEFI.plist
 ```	
 
 ## Sources : 
